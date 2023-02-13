@@ -50,7 +50,9 @@ class MainActivity : AppCompatActivity() {
                 errors.add("Hasło musi posiadać przynajmniej jedną liczbe")
             }
 
-
+            if(firstPassword.isEmpty()||secondPassword.isEmpty()){
+                errors.add("Hasło nie może być puste")
+            }
 
             return errors.toTypedArray()
         }
